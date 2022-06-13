@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+body{
+	font-family: 'Open Sans', sans-serif;
+  background: #fff !important ;
+}
+
+.border_left_right{
+  border: 1px solid #d0d0d0;
+}
+
+.text_center{
+  text-align: center;
+}
+
+
+.ik_select_link, .common_select-link{
+  background-color: #efefef !important;
+}
+
+.middle_calc{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #efefef;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  text-align: center;
+}
+
+.middle_calc > form{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header{
+  text-align: center;
+  max-width: 1290px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form{
+  padding-left: 5px;
+  color: #555;
+}
+
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked + .fig1 {
+  background-color: #e1e1e1;
+}
+input[type="radio"]:checked + .fig1 span {
+}
+input[type="radio"]:checked + .fig1 span:after {
+}
+
+input[type="radio"]:checked + .block:after {
+  border-top: #e1e1e1;
+  background-color: #fff;
+}
+
+input[type="radio"]:checked + .fig1:after + .fig1:before{
+  background-color: #fff;
+  border-radius: 5px;
+}
+input[type="radio"]:checked + .fig1 span {
+  transform: translateY(70px);
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+
+.box{
+  border: 1px solid #f7f7f7;
+}
+
+.box img{
+  width: 60px;
+  height: 60px;
+}
+
+input[type="radio"]:checked + .box {
+  background-color: #fff;
+  border-color: #D09735;
+  border-radius: 5px;
+}
+input[type="radio"]:checked + .box span {
+
+}
+input[type="radio"]:checked + .box span:after {
+}
+
+input[type="radio"]:checked + .box:after {
+  border-top: #fff;
+  background-color: #fff;
+}
+
+input[type="radio"]:checked + .box:after + .fig1:before{
+  background-color: #fff;
+  border-radius: 5px;
+}
+input[type="radio"]:checked + .fig1 span {
+}
+
+.middle .box {
+  width: 255px;
+  height: 75px;
+  transition: all 250ms ease;
+  will-change: transition;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  font-weight: 400;
+}
+.middle .box:active {
+  transform: translateY(10px);
+}
+.middle .box span {
+  transition: all 300ms ease;
+  font-size: 1.3em;
+  user-select: none;
+}
+.middle .box span:before {
+  font-size: 1.2em;
+  font-family: FontAwesome;
+  display: block;
+  transform: translateY(-80px);
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+  font-weight: normal;
+  color: white;
+}
+
+.middle p {
+  font-family: "Inter", sans-serif;
+  
+}
+.middle p a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #fff;
+}
+.middle p span:after {
+  content: "\f0e7";
+  font-family: FontAwesome;
+  color: yellow;
+}
+
+.box span{
+  color: #D09735 !important;
+}
+
+.box{
+  padding: 20px 30px;
+}
+
+.main{
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.first-row-item_1{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.form{
+  height: 40px;
+  width: 330px !important;
+  border: none;
+  background-color: #efefef;
+}
+
+.blocks{
+  color: #888888;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+select{
+  color: #888888;
+}
+
+
+option:hover{
+  background: #d09735;
+}
+
+.first-row{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.main_span{
+  font-weight: 600;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.main_h1{
+  color: #000;
+}
+
+.item_conf_row{
+  display: flex;
+}
+
+.item_conf{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.item_conf > img{
+  margin-right: 10px;
+}
+
+.conf_blocks{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.block {
+  width: 170px;
+    padding: 20px;
+    position: relative;
+    background-color: #f7f7f7;
+    margin-right: 20px;
+    text-align: center;
+    cursor: pointer;
+   }
+   .block::before, .block::after {
+    content: ''; 
+    position: absolute;
+    left: 72px; bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid transparent;
+   }
+   .block::after {
+    border-top: 10px solid #f7f7f7;
+    bottom: -19px; 
+   }
+
+.stars{
+  text-align: center;
+}
+
+.price{
+  font-weight: 800;
+  font-size: 24px;
+  color: #d09735;
+}
+
+.after-price{
+  font-weight: 600;
+  color: #000 !important;
+  margin-top: 10px;
+}
+
+.box-name{
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.left-side table{
+  border: 1px solid #eee;
+  width: 100%;
+}
+
+.left-side table td{
+  padding-left: 5px;
+}
+.left-side table th {
+  font-weight: bold;
+  padding: 5px;
+  background: #efefef;
+  border: 1px solid #dddddd;
+}
+
+.left-side table td:nth-child(4n+4){
+  padding: 5px 10px;
+  text-align: right;
+}
+.left-side table tbody tr:nth-child(odd){
+  background: #fff;
+}
+.left-side table tbody tr:nth-child(even){
+  background: #efefef;
+}
+
+.justify-content-around{
+}
+
+.edn{
+  background-color: #efefef;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.uslugi, .delivery_price{
+  margin-top: 30px;
+}
+
+.callback{
+  margin-top: 20px;
+  border: 1px solid #d09735;
+  border-radius: 5px;
+  color: #000;
+  text-align: center;
+  padding: 20px 55px;
+}
+
+.number_phone{ 
+  font-weight: 800;
+  color: #d09735;
+  font-size: 24px;
+}
+
+.span_send{
+  font-weight: 800;
+  color: #d09735;
+}
+
+.form_contact{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.forms{
+  display: flex;
+  flex-direction: column;
+}
+
+.forms span{
+  margin-top: 20px;
+  text-align: left;
+}
+
+.form_contact input{
+  width: 100%;
+}
+
+.button{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  background-color: #d09735;
+  width: 100%;
+  height: 20px;
+}
+
+.button div{
+  width: 100%;
+  background-color: #d09735;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:last-child{
+    height: 33px;
+    width: 150px;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.fig1{
+    width: 200px !important;
+    height: 190px !important;
+    position: relative !important;
+}
+.fig1:after {
+    content: '' !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    border-width: 16px 101px 0!important;
+    border-style: solid !important;
+}
+.fig1:before {
+    content: '' !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    border-width: 25px 75px 0 !important;
+}
+
+
+.first{
+  background-color: #fff;
+}
+
+.discount{
+  color: #d09735;
+  font-weight: 800;
+}
+
+.discount_block{
+  display: flex;
+  color: #d09735;
+  font-weight: 800;
+  align-items: center;
+  flex-direction: column;
+}
+
+.itogblock{
+  flex-direction: row;
+  color: #d09735;
+  font-size: 18px;
+  align-items: flex-start;
+  min-width: 86px;
+  justify-content: end;
+}
+
+.itogMain{
+  font-weight:  600;
+  text-transform: uppercase;
+  color: #d09735;
+}
+
+.bc-w{
+  background-color: #fff;
+}
+
+.itog_main{
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.itog{
+  font-size: 18px;
+  font-weight: 800;
+  color: #d09735;
+}
+
+.discount-line{
+  text-decoration: line-through;
+}
+
+label{
+  position: relative;
+}
+
+.quest{
+  border: 1px solid #fefefe;
+  border-radius: 60px;
+  background: #eee5e5;
+  padding: 3px 12px;
+  z-index: 100;
+}
+
+.quest_label{
+  top: 19px;
+  left: 150px;
+  position: absolute;
+}
+
+.quest:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    right: 28px; top: 30%; /* Положение подсказки */
+    background: #fff; /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 14px;
+    border-radius: 11px;
+    padding: 10px 20px;
+    -webkit-box-shadow: -3px 0px 26px 7px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -3px 0px 26px 7px rgba(34, 60, 80, 0.2);
+    box-shadow: -3px 0px 26px 7px rgba(34, 60, 80, 0.2);
+    z-index: 9999;
+   }
+
+.row_text{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.quest_text{
+  position: absolute;
+  left: 270px;
+}
+
+.margin_20{
+  margin-bottom: 15px;
+}
+
+.right-side, .left-side{
+  padding: 0px 10px 0px 10px;
+}
+
+.left-side{
+  width: 100%;
+}
+
+.form_contact .form{
+  width: 100% !important;
+}
+
+.main_span_result{
+  font-size: 24px;
+}
+
+.common_select-link{
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5px 0 5px !important;
+  height: 40px !important;
+  width: 330px !important;
+}
+
+.trigger{
+  height: 26px !important;
+  border-radius: 16px;
+  position: static !important;
+}
+
+.tel:last-child{
+  margin-bottom: 20px;
+}
+
+.actii{
+  padding: 0px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 70px;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgba(208, 151, 53, 1);
+  border-right: 1px solid rgba(208, 151, 53, 1);
+}
+
+.block-two{
+  margin-top: 50px;
+}
+
+#discountNumberLine{
+  text-decoration: line-through;
+  color: gray;
+}
+
+.d-flex{
+  display: flex;
+}
+
+
+
+.bold_grey{
+  font-weight: 800;
+  color: gray;
+  font-size: 18px;
+}
+
+.itogMat{
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.align-center{
+  display: flex;
+  align-items: center;
+}
+
+#discountNumber{
+  font-size:  18px;
+}
+
+.middle_calc label .box{
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+}
+
+.form, .ik_select{
+  border: 1px solid #e3e0e0;
+}
+
+/* Модальное окно*/
+/* Стили для подложки */
+
+.overlay {
+   
+   /* Скрываем подложку  */
+   opacity: 0;
+   visibility: hidden;
+   
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 9999;
+   transition: .3s all;
+}
+
+.j-b{
+  justify-content: space-between;
+}
+
+.form-map{
+  width: 100% !important;
+}
+
+
+/* Стили для модальных окон */
+
+.modals {
+   
+   /* Скрываем окна  */
+   opacity: 0;
+   visibility: hidden;
+   
+   
+   /*  Установаем ширину окна  */
+   width: 100%;
+   max-width: 850px;
+   
+   /*  Центрируем и задаем z-index */
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 999; /* Должен быть выше чем у подложки*/
+   
+   /*  Побочные стили   */
+   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+   text-align: center;
+   padding: 30px;
+   border-radius: 3px;
+   background-color: #fff;
+   transition: 0.3s all;
+   z-index: 99999999999 !important;
+}
+
+
+/* Стили для активных классов подложки и окна */
+
+.modals.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   fill: #444;
+   cursor: pointer;
+}
+
+
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+
+.first-row a {
+   padding: 20px;
+   display: inline-block;
+   text-decoration: none;
+   background-color: #414b52;
+   margin: 10px;
+   border-radius: 3px;
+}
+
+.js-open-modal{
+  font-weight: 600 !important;
+  color: rgba(208, 151, 53, 1);
+}
+
+input{
+  background: #efefef !important;
+}
+
+.download{
+  display: flex;
+  justify-content: space-between;
+}
+
+.non-hide_text{
+  color: red;
+  display: none;
+}
+
+@media(max-width: 1190px){
+  .blocks{
+    flex-wrap: wrap;
+  }
+
+  .conf_blocks{
+  flex-wrap: wrap;
+}
+  .first-row-item_1:nth-child(2n){
+    margin-right: 0px;
+  }
+}
+
+.button_input{
+  background: rgba(208, 151, 53, 1) !important;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+}
+
+.space-b{
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media(max-width: 637px){
+  .first-row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form{
+    width: 100% !important;
+  }
+
+  .conf_blocks{
+    display: block;
+    text-align: center;
+  }
+
+  .quest_text{
+    left: 243px;
+  }
+
+  .form_contact .form{
+    width: 100% !important;
+  }
+
+  .common_select-link{
+    width: 100% !important;
+  }
+
+  label{
+    margin-bottom: 30px; 
+  }
+
+  .first-row-item_1{
+    margin-right: 0px;
+  }
+
+}
