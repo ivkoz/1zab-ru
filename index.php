@@ -122,7 +122,11 @@ $HTML .= <<<EOF
                 <!-- Подложка под модальным окном -->
                 <div class="overlay js-overlay-modal"></div>
                 <div class="first-row">
-                    <input type="text" class="form form-map" id="suggest1" value="" onchange="">
+                    <input type="text" class="form form-map" id="suggest1" value="" onkeyup="let form_data = get_form_data();
+                    calculate_and_display(form_data);
+                    calculate_and_display_tariff_price(form_data, "#basicPrice");
+                    calculate_and_display_tariff_price(form_data, "#standicPrice");
+                    calculate_and_display_tariff_price(form_data, "#premPrice");">
 
                 </div>
                 <h2 class="main_h1">Готовые конфигурации по вашим параметрам</h2>

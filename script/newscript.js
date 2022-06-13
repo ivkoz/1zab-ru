@@ -65,7 +65,7 @@ function calculate_results(form_data, prices) {
     }
 
     let total_price_with_skidka = total_price - skidka;
-    let total_price_za_uslugi = total_price_with_skidka + total_cena_zabora + itogforuse;
+    let total_price_za_uslugi = total_price_with_skidka + total_cena_zabora + itogforuse + cena_dostavki;
 
     return {
         skidka: skidka,
@@ -203,13 +203,21 @@ $('#u12').change(function () {  // изменение длины забора
     calculate_and_display_tariff_price(form_data, "#premPrice");
 });
 
-// $('input').on('change', function () {
-//     let form_data = get_form_data();
-//     calculate_and_display(form_data);
-//     calculate_and_display_tariff_price(form_data, "#basicPrice");
-//     calculate_and_display_tariff_price(form_data, "#standicPrice");
-//     calculate_and_display_tariff_price(form_data, "#premPrice");
-// });
+$('input').change(function () { 
+    let form_data = get_form_data();
+    calculate_and_display(form_data);
+    calculate_and_display_tariff_price(form_data, "#basicPrice");
+    calculate_and_display_tariff_price(form_data, "#standicPrice");
+    calculate_and_display_tariff_price(form_data, "#premPrice");
+});
+
+$('input').on('change', function () {
+    let form_data = get_form_data();
+    calculate_and_display(form_data);
+    calculate_and_display_tariff_price(form_data, "#basicPrice");
+    calculate_and_display_tariff_price(form_data, "#standicPrice");
+    calculate_and_display_tariff_price(form_data, "#premPrice");
+});
 
 $('select').on('change', function () {  // изменение селектов
     let form_data = get_form_data();
@@ -221,13 +229,7 @@ $('#u33').on('change', function () {  // изменение селектов
     calculate_and_display(form_data);
 });
 
-// $("body").click(function(){
-//     let form_data = get_form_data();
-//     calculate_and_display(form_data);
-//     calculate_and_display_tariff_price(form_data, "#basicPrice");
-//     calculate_and_display_tariff_price(form_data, "#standicPrice");
-//     calculate_and_display_tariff_price(form_data, "#premPrice");
-// });
+
 
 
 $( "#basic" ).click(function() {

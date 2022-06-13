@@ -79,17 +79,6 @@ function init() {
        document.getElementById('suggest1').value = routePanelControl.routePanel.state._data.to;  
      });
       
-     // $(".ymaps-2-1-79-route-panel-input__input").change(function(){
-     //    document.getElementById('suggest1').value = $(".ymaps-2-1-79-route-panel-input__input").value     
-     // });
-    // var body = elem.getElementsByTagName('body')
-    // $('body') .on('click', function (){
-    //     routePanelControl.routePanel.state.set({
-    //     fromEnabled: true,
-    //     from: 'Ногинск, Школьная, 1Б ',
-    //      to: document.getElementById('suggest1').value
-    //  });
-    // });
 
     myMap.controls.add(routePanelControl).add(zoomControl);
 
@@ -126,12 +115,6 @@ function init() {
                     $('#itogforus').html(itogforuse);
                     result.total_price_with_skidka = result.total_price_with_skidka  + price + setupZab;
                     $('#ItogPrice').html(Math.round(ItogPrice));
-                    // premItogPrice = premitog + setupZab + price;
-                    // $('#premPrice').html(Math.round(premItogPrice));
-                    // standItogPrice = standitog + setupZab + price;
-                    // $('#standicPrice').html(Math.round(standItogPrice));
-                    // basItogPrice = basitog + setupZab + price;
-                    // $('#basicPrice').html(Math.round(basItogPrice));
                     cena_dostavki = price;
                     console.log(cena_dostavki + "price");
                     $('#deliveryPrice').html(Math.round(cena_dostavki));
